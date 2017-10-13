@@ -1,9 +1,10 @@
 import React from 'react';
+import Counter from './Counter';
 
 const List = ({arr}) => (
-    <ul>
-        {arr.map( (x, i) => <li key={i}>{x}</li>)}
-    </ul>
+    <div>
+        {arr.map( (x, i) => <Counter key={i} count={x} index={i} />)}
+    </div>
 );
 
 export default List;
